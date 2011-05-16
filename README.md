@@ -53,11 +53,9 @@ Getting Started
 	* Go to github and add the new key to your github project
 	
 	* Copy .bashrc file to jenkins home:  
-	`
-	$ mkdir tmp && cd tmp  
-	$ git clone git://github.com/gmonfort/jenkins4rails.git  
-	$ cp jenkins4rails/.bashrc .  
-	`
+		`$ mkdir tmp && cd tmp`  
+		`$ git clone git://github.com/gmonfort/jenkins4rails.git`  
+		`$ cp jenkins4rails/.bashrc .`  
 
 * Configure jenkins
 
