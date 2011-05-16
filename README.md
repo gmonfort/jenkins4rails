@@ -71,13 +71,15 @@ Getting Started
 			* Enter the URL of your github project (i.e. git://github.com/gmonfort/jenkins4rails.git)
 			* Choose a trigger under "Build Triggers" (i.e. periodically, * 1 * * * stands for daily)
 			* Under "Build" select "Execute Shell" and put the following:  
-				`#!/bin/bash -x  
+				<pre>
+				#!/bin/bash -x  
 				source ~/.bashrc  
 				rvm use 1.9.2@name-of-your-project-gemset  
 				bundle install  
 				rake db:migrate  
 				rake db:test:load  
-				rake spec`
+				rake spec
+				</pre>
 
 			* Save your job and schedule a new build (click on "Build now")
 			* Under "Build History" you'll see your new build running or scheduled to run, click on it,  
@@ -85,4 +87,4 @@ Getting Started
 
 
 [localhost]: http://localhost:8080 "localhost port 8080"
-/* vim: set ai ts=4 sts=4: */
+<!-- vim: set ai ts=4 sts=4: -->
