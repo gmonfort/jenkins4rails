@@ -71,8 +71,7 @@ Getting Started
 			* Enter the URL of your github project (i.e. git://github.com/gmonfort/jenkins4rails.git)
 			* Choose a trigger under "Build Triggers" (i.e. periodically, * 1 * * * stands for daily)
 			* Under "Build" select "Execute Shell" and put the following:  
-			  `
-			  #!/bin/bash -x  
+				`#!/bin/bash -x  
 				source ~/.bashrc  
 				rvm use 1.9.2@name-of-your-project-gemset  
 				bundle install  
